@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.provenance.relayer</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>start-relayer.sh</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>RELAYER_HOME</key>
+        <string>Input path to relayer home...</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>Input path to Provenance scripts...</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/com.provenance.relayer.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.provenance.relayer.error</string>
+</dict>
+</plist>
